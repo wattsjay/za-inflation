@@ -33,7 +33,7 @@ The limitations from the source at Stats [Stats SA](https://www.statssa.gov.za/p
 
 2. The average percentage change for the year is based on the available monthly values. If a year does not have all months available, then the average is calculated using the available months. For example, Stats SA has not yet released CPI data for the months after October 2024.
 
-3. The average percentage change for the year is based on the available monthly values. If a year does not have all months available, then the average is calculated using the available months. For example, Stats SA has not yet released CPI data for the months after October 2024.
+3. Although the calculations are simple, I am not a financial professional. I advise against using this for sensitive applications. That said, in the upcoming release, more tests will be added to verify the accuracy of the results.
 
 ---
 

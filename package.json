@@ -1,7 +1,7 @@
 {
   "name": "za-inflation",
   "description": "Calculate the inflation of an amount between two years for South Africa.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "types": "dist/index.d.ts",
