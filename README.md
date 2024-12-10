@@ -25,15 +25,15 @@ console.log(amount) // R757,614.00 (so much cheaper than today's!)
 
 ## Limitations
 
-1. The limitations of from the source from [Stats SA](https://www.statssa.gov.za/publications/P0141/CPIHistory.pdf) apply. For example, this data-set state the following:
+The limitations from the source at Stats [Stats SA](https://www.statssa.gov.za/publications/P0141/CPIHistory.pdf) apply. For example, this dataset states the following:
 
 > - Primary urban areas up to and including December 2008. All urban areas from January 2009. The series were linked so as to
 >   provide a continuous index.
 > - Substantial changes were made to the compilation of the CPI in January 2009.
 
-2. The average % change for the year is based on the available monthly values. If a year does not have all the months available, then the average is based on the available months. For example, Stats SA has not yet released CPI & for the months after October, 2024.
+2. The average percentage change for the year is based on the available monthly values. If a year does not have all months available, then the average is calculated using the available months. For example, Stats SA has not yet released CPI data for the months after October 2024.
 
-3. This is an alpha release, and although the calculations are simple, I am not a financial professional. I advise that this should not be used for sensitive applications. That said, in the coming production release, more tests will be added to verify the accuracy of results.
+3. The average percentage change for the year is based on the available monthly values. If a year does not have all months available, then the average is calculated using the available months. For example, Stats SA has not yet released CPI data for the months after October 2024.
 
 ---
 
