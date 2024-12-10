@@ -11,21 +11,26 @@ npm i za-inflation
 ## Usage
 
 ```ts
+import { getZaInflation, data } from 'za-inflation'
+
 // How much is the purchase price of a BMW 320d
 // bought in 2012 in today's money?
 
-const amount = calculateInflation({
+const amount = getZaInflation({
   amount: 408_500,
-  yearFrom: 2012,
+  year: 2012,
   yearTo: 2024 // {optional} defaults to the latest year
 })
 
 console.log(amount) // R757,614.00 (so much cheaper than today's!)
+
+// Access dataset directly
+console.log(data['2024']) // 115.71 (CPI)
 ```
 
 ## Limitations
 
-The limitations from the source at Stats [Stats SA](https://www.statssa.gov.za/publications/P0141/CPIHistory.pdf) apply. For example, this dataset states the following:
+The limitations from the source at [Stats SA](https://www.statssa.gov.za/publications/P0141/CPIHistory.pdf) apply. For example, this dataset states the following:
 
 > - Primary urban areas up to and including December 2008. All urban areas from January 2009. The series were linked so as to
 >   provide a continuous index.

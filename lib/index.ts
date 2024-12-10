@@ -23,38 +23,39 @@ SOFTWARE.
 */
 
 import { data } from './data'
+export { data }
 
 /**
  * Calculate the inflation of an amount between two years.
  *
  * @example
  * ```ts
- * const amount = calculateInflation({
+ * const amount = getZaInflation({
  *  amount: 100_000,
- *  yearFrom: 2002,
- *  yearTo: 2024
+ *  year: 2002,
+ *  yearTo: 2024 {optional} // default is 2024
  * })
  *
  * console.log(amount) // 329470
  * ```
  */
-export function calculateInflation({
+export function getZaInflation({
   amount,
-  yearFrom,
+  year,
   yearTo = 2024
 }: {
   amount: number
-  yearFrom: number
+  year: number
   yearTo?: number
 }) {
-  const fromIndex = data[yearFrom.toString() as keyof typeof data]
+  const fromIndex = data[year.toString() as keyof typeof data]
   if (!fromIndex) {
-    throw new Error('Invalid start year. Has to be between 1912 and 2024')
+    throw new Error('Invalid start year. Has to be between 1929 and 2024')
   }
 
   const toIndex = data[yearTo.toString() as keyof typeof data]
   if (!toIndex) {
-    throw new Error('Invalid end year. Has to be between 1912 and 2024')
+    throw new Error('Invalid end year. Has to be between 1929 and 2024')
   }
 
   const inflation = toIndex / fromIndex

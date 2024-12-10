@@ -1,11 +1,11 @@
 import { describe, expect, it } from 'vitest'
-import { calculateInflation } from '../lib/index'
+import { getZaInflation } from '../lib/index'
 
-describe('calculateInflation', async () => {
+describe('getZaInflation', async () => {
   it('should return the correct value', async () => {
-    const amount = calculateInflation({
+    const amount = getZaInflation({
       amount: 408_500,
-      yearFrom: 2012,
+      year: 2012,
       yearTo: 2024
     })
     expect(amount).toBe(757614)
